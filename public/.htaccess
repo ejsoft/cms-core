@@ -1,0 +1,25 @@
+<IfModule mod_autoindex.c>
+  Options -Indexes
+</IfModule>
+
+<Files ~ "(\.(inc|module|pl|sh|sql|theme|engine|xtmpl|svn-base|mysql|pgsql|less|scss|sass|styl|coffee|ts)|.htaccess.sample|.git|.gitignore|.gitkeep|Root|text-base|prop-base|props|wcprops|entries|format|scripts|database)$">
+	Order deny,allow
+	Deny from all
+</Files>
+
+<FilesMatch ".(htaccess|htpasswd|ini|phps|fla|psd|log|sh|gitignore|gitkeep)$">
+    Order Allow,Deny
+    Deny from all
+</FilesMatch>
+
+<IfModule mod_rewrite.c>
+    Options +FollowSymlinks
+
+    RewriteEngine On
+
+    RewriteCond %{REQUEST_FILENAME} !^favicon\.ico
+    RewriteCond %{REQUEST_FILENAME} !-f
+    RewriteCond %{REQUEST_FILENAME} !-d
+
+    RewriteRule . index.php
+</IfModule>

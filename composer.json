@@ -1,0 +1,23 @@
+{
+  "name": "cms/site",
+  "description": "ej CMS",
+  "homepage": "https://www.ejsoft.org/cms/",
+  "type": "project",
+  "version": "1.0.0",
+  "keywords": [
+    "yii2",
+    "cms",
+    "ej"
+  ],
+  "minimum-stability": "beta",
+  "require": {
+    "php": ">=7.0.0",
+    "ejsoft/cms-core": "~1.0.0"
+  },
+  "require-dev": {
+    "codeception/codeception": "2.2.9",
+    "codeception/verify": "0.3.3",
+    "codeception/specify": "0.4.6",
+    "codeception/mockery-module": "0.2.2"
+  }
+}
