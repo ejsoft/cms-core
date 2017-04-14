@@ -1,0 +1,20 @@
+#!/usr/bin/env php
+<?php
+
+if (PHP_SAPI !== 'cli') {
+    echo 'bin must be run as a CLI application';
+    exit(1);
+}
+
+define('YII_ENV', 'dev');
+
+// fcgi doesn't have STDIN defined by default
+defined('STDIN') or define('STDIN', fopen('php://stdin', 'r'));
+
+define('VENDOR_DIR', __DIR__ . '/protected/vendor');
+
+require __DIR__ . '/protected/vendor/ejsoft/ej-core/src/bootstrap.php';
+
+$app = new ej\console\Application((new \ej\base\Boot(['app' => 'console']))->apply());
+$exitCode = $app->run();
+exit($exitCode);

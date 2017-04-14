@@ -9,15 +9,17 @@
     "cms",
     "ej"
   ],
-  "minimum-stability": "beta",
+  "config": {
+    "vendor-dir": "protected/vendor"
+  },
+  "minimum-stability": "stable",
   "require": {
     "php": ">=7.0.0",
-    "ejsoft/cms-core": "~1.0.0"
+    "ejsoft/ej-core": "@dev"
   },
   "require-dev": {
-    "codeception/codeception": "2.2.9",
-    "codeception/verify": "0.3.3",
-    "codeception/specify": "0.4.6",
-    "codeception/mockery-module": "0.2.2"
+    "codeception/base": "^2.2.3",
+    "codeception/verify": "~0.3.1",
+    "codeception/specify": "~0.4.3"
   }
 }

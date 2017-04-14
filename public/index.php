@@ -3,6 +3,7 @@
  * Entry point
  */
 
+/* PHP version validation */
 if (!defined('PHP_VERSION_ID') || !(PHP_VERSION_ID >= 70006)) {
     if (PHP_SAPI == 'cli') {
         echo 'This script requires PHP 7.0.6 or later, but you&rsquo;re running ' . PHP_VERSION . '. Please talk to your host/IT department about upgrading PHP or your server.' . PHP_EOL;
@@ -17,7 +18,13 @@ HTML;
     exit(1);
 }
 
-$bootstrap = dirname(__DIR__) . '/protected/vendor/ejsoft/js-core/bootstrap.php';
+define('VENDOR_DIR', dirname(__DIR__) . '/protected/vendor');
+
+if (file_exists(dirname(__DIR__ . '/.dev'))) {
+    define('YII_ENV', 'dev');
+}
+
+$bootstrap = dirname(__DIR__) . '/protected/vendor/ejsoft/ej-core/src/bootstrap.php';
 
 try {
     if (!file_exists($bootstrap)) {
@@ -49,6 +56,5 @@ HTML;
     exit(1);
 }
 
-$configurator = new \ej\base\Configurator();
-(new \ej\web\Application($configurator->apply()))
+(new \ej\web\Application((new \ej\base\Boot())->apply()))
     ->run();
