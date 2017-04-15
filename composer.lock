@@ -367,16 +367,16 @@
         },
         {
             "name": "danielstjules/stringy",
-            "version": "3.0.0",
+            "version": "3.0.1",
             "source": {
                 "type": "git",
                 "url": "https://github.com/danielstjules/Stringy.git",
-                "reference": "8b59cd22333b93b5b89f9d108524dca9ca9ceb4e"
+                "reference": "2288363663d94ce11c9ca555f7c760e9f799bb74"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/danielstjules/Stringy/zipball/8b59cd22333b93b5b89f9d108524dca9ca9ceb4e",
-                "reference": "8b59cd22333b93b5b89f9d108524dca9ca9ceb4e",
+                "url": "https://api.github.com/repos/danielstjules/Stringy/zipball/2288363663d94ce11c9ca555f7c760e9f799bb74",
+                "reference": "2288363663d94ce11c9ca555f7c760e9f799bb74",
                 "shasum": ""
             },
             "require": {
@@ -419,7 +419,7 @@
                 "utility",
                 "utils"
             ],
-            "time": "2017-03-09T00:52:40+00:00"
+            "time": "2017-04-12T15:20:39+00:00"
         },
         {
             "name": "ejsoft/ej-core",
@@ -427,12 +427,12 @@
             "source": {
                 "type": "git",
                 "url": "https://github.com/ejsoft/ej-core.git",
-                "reference": "e7496cc95cc01d12bc17818dcece1392de93e5e2"
+                "reference": "7ada9999dc7daee1b76f6f33e4ce85210048a21a"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/ejsoft/ej-core/zipball/e7496cc95cc01d12bc17818dcece1392de93e5e2",
-                "reference": "e7496cc95cc01d12bc17818dcece1392de93e5e2",
+                "url": "https://api.github.com/repos/ejsoft/ej-core/zipball/7ada9999dc7daee1b76f6f33e4ce85210048a21a",
+                "reference": "7ada9999dc7daee1b76f6f33e4ce85210048a21a",
                 "shasum": ""
             },
             "require": {
@@ -447,7 +447,7 @@
                 "kdn/yii2-domain-validator": "*",
                 "longman/ip-tools": "*",
                 "mobiledetect/mobiledetectlib": "*",
-                "php": "~7.0.6",
+                "php": "~7.0.0",
                 "samdark/sitemap": "*",
                 "symfony/process": "*",
                 "symfony/yaml": "*",
@@ -456,25 +456,10 @@
                 "yiisoft/yii2-swiftmailer": "*",
                 "yiisoft/yii2-twig": "~2.0.0"
             },
-            "require-dev": {
-                "codeception/base": "^2.2.3",
-                "codeception/specify": "~0.4.3",
-                "codeception/verify": "~0.3.1"
-            },
             "type": "project",
-            "extra": {
-                "asset-vcs-driver-options": {
-                    "github-no-api": true
-                },
-                "asset-pattern-skip-version": "(-build)",
-                "asset-installer-paths": {
-                    "npm-asset-library": "vendor/npm",
-                    "bower-asset-library": "vendor/bower"
-                }
-            },
             "autoload": {
                 "psr-4": {
-                    "ej\\": "src/"
+                    "ej\\": ""
                 }
             },
             "notification-url": "https://packagist.org/downloads/",
@@ -482,7 +467,7 @@
                 "cms",
                 "yii2"
             ],
-            "time": "2017-04-11 18:53:54"
+            "time": "2017-04-15T13:11:06+00:00"
         },
         {
             "name": "ezyang/htmlpurifier",
@@ -533,16 +518,16 @@
         },
         {
             "name": "giggsey/libphonenumber-for-php",
-            "version": "8.4",
+            "version": "8.4.1",
             "source": {
                 "type": "git",
                 "url": "https://github.com/giggsey/libphonenumber-for-php.git",
-                "reference": "0613731935f03a799c28c5313fb647109a56d2be"
+                "reference": "eeb3835c8afc6ab35427bc9771ffc7851ce4ed8f"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/giggsey/libphonenumber-for-php/zipball/0613731935f03a799c28c5313fb647109a56d2be",
-                "reference": "0613731935f03a799c28c5313fb647109a56d2be",
+                "url": "https://api.github.com/repos/giggsey/libphonenumber-for-php/zipball/eeb3835c8afc6ab35427bc9771ffc7851ce4ed8f",
+                "reference": "eeb3835c8afc6ab35427bc9771ffc7851ce4ed8f",
                 "shasum": ""
             },
             "require": {
@@ -597,7 +582,7 @@
                 "phonenumber",
                 "validation"
             ],
-            "time": "2017-03-28T19:11:25+00:00"
+            "time": "2017-04-11T20:52:21+00:00"
         },
         {
             "name": "giggsey/locale",
@@ -1830,16 +1815,16 @@
         },
         {
             "name": "myclabs/deep-copy",
-            "version": "1.6.0",
+            "version": "1.6.1",
             "source": {
                 "type": "git",
                 "url": "https://github.com/myclabs/DeepCopy.git",
-                "reference": "5a5a9fc8025a08d8919be87d6884d5a92520cefe"
+                "reference": "8e6e04167378abf1ddb4d3522d8755c5fd90d102"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/myclabs/DeepCopy/zipball/5a5a9fc8025a08d8919be87d6884d5a92520cefe",
-                "reference": "5a5a9fc8025a08d8919be87d6884d5a92520cefe",
+                "url": "https://api.github.com/repos/myclabs/DeepCopy/zipball/8e6e04167378abf1ddb4d3522d8755c5fd90d102",
+                "reference": "8e6e04167378abf1ddb4d3522d8755c5fd90d102",
                 "shasum": ""
             },
             "require": {
@@ -1868,7 +1853,7 @@
                 "object",
                 "object graph"
             ],
-            "time": "2017-01-26T22:05:40+00:00"
+            "time": "2017-04-12T18:52:22+00:00"
         },
         {
             "name": "phpdocumentor/reflection-common",
