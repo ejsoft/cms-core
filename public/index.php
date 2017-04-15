@@ -18,11 +18,13 @@ HTML;
     exit(1);
 }
 
+define('VENDOR_DIR', dirname(__DIR__) . '/protected/vendor');
+
 if (file_exists(dirname(__DIR__ . '/.dev'))) {
     define('YII_ENV', 'dev');
 }
 
-$bootstrap = dirname(__DIR__) . '/protected/vendor/ejsoft/ej-core/bootstrap.php';
+$bootstrap = VENDOR_DIR . '/ejsoft/ej-core/bootstrap.php';
 
 try {
     if (!file_exists($bootstrap)) {
