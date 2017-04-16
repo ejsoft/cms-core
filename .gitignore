@@ -11,6 +11,7 @@ Thumbs.db
 
 codecept.phar
 composer.phar
+composer.lock
 vendor
 
 .DS_Store
