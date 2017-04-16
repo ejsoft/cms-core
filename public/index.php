@@ -20,7 +20,7 @@ HTML;
 
 define('VENDOR_DIR', dirname(__DIR__) . '/protected/vendor');
 
-if (file_exists(dirname(__DIR__ . '/.dev'))) {
+if (file_exists(dirname(__DIR__) . '/.dev')) {
     define('YII_ENV', 'dev');
 }
 
