@@ -10,7 +10,14 @@
     "ej"
   ],
   "config": {
-    "vendor-dir": "protected/vendor"
+    "process-timeout": 1800,
+    "vendor-dir": "protected/vendor",
+    "fxp-asset": {
+      "installer-paths": {
+        "npm-asset-library": "protected/vendor/npm",
+        "bower-asset-library": "protected/vendor/bower"
+      }
+    }
   },
   "minimum-stability": "dev",
   "prefer-stable": true,
@@ -22,11 +29,5 @@
     "codeception/base": "^2.2.3",
     "codeception/verify": "~0.3.1",
     "codeception/specify": "~0.4.3"
-  },
-  "extra": {
-    "asset-installer-paths": {
-      "npm-asset-library": "protected/vendor/npm",
-      "bower-asset-library": "protected/vendor/bower"
-    }
   }
 }
