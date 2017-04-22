@@ -11,10 +11,13 @@ define('YII_ENV', 'dev');
 // fcgi doesn't have STDIN defined by default
 defined('STDIN') or define('STDIN', fopen('php://stdin', 'r'));
 
-define('VENDOR_DIR', __DIR__ . '/protected/vendor');
+define('PROTECTED_DIR', __DIR__ . '/protected');
+define('VENDOR_DIR', PROTECTED_DIR . '/vendor');
 
-require __DIR__ . '/protected/vendor/ejsoft/ej-core/src/bootstrap.php';
+require __DIR__ . '/protected/vendor/ejsoft/ej-core/bootstrap.php';
 
-$app = new ej\console\Application((new \ej\base\Boot(['app' => 'console']))->apply());
+$app = (new \ej\base\Boot(['app' => 'console']))
+    ->apply('\ej\console\Application');
+
 $exitCode = $app->run();
 exit($exitCode);

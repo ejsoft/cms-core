@@ -18,7 +18,8 @@ HTML;
     exit(1);
 }
 
-define('VENDOR_DIR', dirname(__DIR__) . '/protected/vendor');
+define('PROTECTED_DIR', dirname(__DIR__) . '/protected');
+define('VENDOR_DIR', PROTECTED_DIR . '/vendor');
 
 if (file_exists(dirname(__DIR__) . '/.dev')) {
     define('YII_ENV', 'dev');
@@ -55,5 +56,6 @@ HTML;
     exit(1);
 }
 
-(new \ej\base\Boot())->apply('\ej\web\Application')
+(new \ej\base\Boot())
+    ->apply('\ej\web\Application')
     ->run();
