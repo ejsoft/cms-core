@@ -1,0 +1,7 @@
+name: Default
+assets:
+  default:
+    css:
+      - css/site.css
+    depends:
+      - ej\assets\Bootstrap
