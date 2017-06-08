@@ -11,16 +11,14 @@
   ],
   "config": {
     "process-timeout": 1800,
-    "vendor-dir": "protected/vendor"
+    "vendor-dir": "protected/vendor",
+    "optimize-autoloader": true
   },
   "minimum-stability": "stable",
   "require": {
     "php": ">=7.0.0",
     "ejsoft/ease-core": "@dev"
-  },
-   "config": {
-    "optimize-autoloader": true
-  },
+  }
    "repositories": [
     {
       "type": "composer",
