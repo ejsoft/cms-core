@@ -1,4 +1,4 @@
-# ejCMS based on Yii2
+# Ease CMS based on Yii2
 `This script is in beta, please do not use it in production.`
 
 ## Before you start
