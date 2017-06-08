@@ -7,7 +7,7 @@
   "keywords": [
     "yii2",
     "cms",
-    "ej"
+    "ease"
   ],
   "config": {
     "process-timeout": 1800,
@@ -15,7 +15,16 @@
   },
   "minimum-stability": "stable",
   "require": {
-    "ejsoft/ease-core": "@dev",
-    "ejsoft/ease-module-site": "@dev"
-  }
+    "php": ">=7.0.0",
+    "ejsoft/ease-core": "@dev"
+  },
+   "config": {
+    "optimize-autoloader": true
+  },
+   "repositories": [
+    {
+      "type": "composer",
+      "url": "https://asset-packagist.org"
+    }
+  ]
 }
