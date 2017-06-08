@@ -1,7 +1,7 @@
 {
-  "name": "cms/site",
-  "description": "ej CMS",
-  "homepage": "https://www.ejsoft.org/cms/",
+  "name": "ejsoft/ease-cms",
+  "description": "Ease CMS",
+  "homepage": "https://www.ejsoft.org/ease/",
   "type": "project",
   "version": "1.0.0",
   "keywords": [
@@ -21,8 +21,7 @@
   },
   "minimum-stability": "stable",
   "require": {
-    "php": ">=7.0.0",
-    "ejsoft/ej-core": "@dev",
-    "ejsoft/module-site": "@dev"
+    "ejsoft/ease-core": "@dev",
+    "ejsoft/ease-module-site": "@dev"
   }
 }
