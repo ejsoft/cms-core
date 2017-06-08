@@ -14,7 +14,8 @@
     "vendor-dir": "protected/vendor",
     "optimize-autoloader": true
   },
-  "minimum-stability": "stable",
+  "minimum-stability": "dev",
+  "prefer-stable": true,
   "require": {
     "php": ">=7.0.0",
     "ejsoft/ease-core": "@dev"
