@@ -18,8 +18,8 @@
   "require": {
     "php": ">=7.0.0",
     "ejsoft/ease-core": "@dev"
-  }
-   "repositories": [
+  },
+  "repositories": [
     {
       "type": "composer",
       "url": "https://asset-packagist.org"
